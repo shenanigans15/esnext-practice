@@ -19,3 +19,9 @@ const superHeroes = [
     },
 ]
 
+const superHeroesCopy = structuredClone(superHeroes)
+
+superHeroesCopy[0].name = 'Green Lantern'
+
+console.table(superHeroes)
+console.table(superHeroesCopy)
